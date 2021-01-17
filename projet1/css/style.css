@@ -1,0 +1,215 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html{
+  background-color:lightskyblue;
+}
+
+body{
+  font-family: sans-serif;
+}
+nav .logo{
+  color: white;
+  font-size: 33px;
+  font-weight: bold;
+  line-height: 70px;
+  padding-left: 110px;
+}
+nav{
+  height: 70px;
+  background: #063247;
+  box-shadow: 0 3px 15px rgba(0,0,0,.4);
+}
+nav ul{
+  float: right;
+  margin-right: 120px;
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li a{
+  color: white;
+  display: block;
+  padding: 0 15px;
+  line-height: 70px;
+  font-size: 20px;
+  background: #063247;
+  transition: .5s;
+}
+nav ul li a:hover,
+nav ul li a.active{
+  color: #23dbdb;
+}
+nav ul ul{
+  position: absolute;
+  top: 85px;
+  border-top: 3px solid #23dbdb;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+}
+nav ul ul li{
+  width: 300px;
+  display: list-item;
+  position: relative;
+  border: 1px solid #042331;
+  border-top: none;
+}
+
+.contact{
+  width:150px;
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+nav ul ul li a i{
+  margin-left: 45px;
+}
+section{
+  background: url(bg.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.logo-rbt{
+  position:absolute;
+  top:20%;
+  left:20%;
+  height:287.5px;
+  width:210px;
+  animation-name: anim-robot;
+  animation-duration:1.5s;
+  visibility: hidden;
+}
+
+
+.pied-page{
+  position:relative;
+  top:100px;
+  width:100%;
+  height:300px;
+  background-color:#063247;
+}
+
+.logo-iut{
+  position: relative;
+  top:200px;
+  height:100px;
+  width:80px;
+}
+
+.copyright{
+  position: relative;
+  color:white;
+  top:-100px;
+  left:150px;
+  font-size:8px;
+  margin-top:0px;
+}
+
+.photo-amir{
+  position:relative;
+  height: 100px;
+  width: 100px;
+  top:50px;
+  left:130px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.photo-amir:hover{
+  filter: blur(3px);
+  filter: grayscale(1);
+  filter: saturate(2.2);
+}
+
+
+.drp-en{
+  position: relative;
+  top:-1980px;
+  height:27px;
+  width:40px;
+  left:94%;
+  overflow-x: visible;
+  z-index: 3;
+}
+
+.drp-fr{
+  position: relative;
+  top:-1980px;
+  height:27px;
+  width:40px;
+  left:94%;
+  overflow-x: visible;
+  z-index: 3;
+}
+
+.bloc-nav{
+  position: absolute;
+  top:2000px;
+  right:0%;
+  height:70px;
+  width:100%;
+  overflow-x: visible;
+  z-index:2;
+}
+
+h1{
+  margin-top:150px;
+  margin-left:200px;
+  margin-bottom: 0px;
+}
+
+p{
+  text-align: justify;
+  text-justify: inter-word;
+  overflow-x: visible;
+  margin-top:100px;
+  margin-left:200px;
+  margin-right:200px;
+}
+
+.txt{
+  position: absolute;
+  top:50%;
+}
+
+.txt2{
+  position: relative;
+  color:white;
+  left:150px;
+  top:-150px;
+  font-size:8px;
+}
+
+.img-eliza{
+  height:207px;
+  width:260px;
+  float: right;
+  border: 5px solid #555;
+}
+
+
+@keyframes anim-robot {
+  0%{left:0%;}
+  100%{left:20%;}
+}
